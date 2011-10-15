@@ -3,19 +3,19 @@
 %\usepackage{fullpage}
 
 % For revision control
-%\usepackage{rcs-multi}
-%\rcsid{$Id$}
-%\rcsid{$Header$}
-%\rcskwsave{$Author$}
-%\rcskwsave{$Date$} 
-%\rcskwsave{$Revision$}
+\usepackage{rcs-multi}
+\rcsid{$Id$}
+\rcsid{$Header$}
+\rcskwsave{$Author$}
+\rcskwsave{$Date$} 
+\rcskwsave{$Revision$}
 %%\rcsRegisterAuthor{devangel}{Dennis Jos{\'e} Evangelista}
-%\rcsRegisterAuthor{devangel}{Dennis J. Evangelista}
+\rcsRegisterAuthor{devangel}{Dennis J. Evangelista}
 
 % I typically use these
 \usepackage{graphicx}
-\usepackage{color}
-%\usepackage{makeidx}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{makeidx}
 \usepackage{siunitx}
 
 % PDF metadata
@@ -24,6 +24,7 @@
 \hypersetup{pdfauthor={G. Cardona, D. Evangelista, Y. Garmashov, N. Ray, K. Tse, D. Wong}}
 \hypersetup{pdfsubject={biology}}
 \hypersetup{pdfkeywords={biomechanics, evolution, physical model, aerodynamics, gliding, stability, maneuverability}}
+\hypersetup{colorlinks=true,citecolor=Violet,linkcolor=Blue,urlcolor=Red}
 
 % Biology style references
 %\usepackage[round]{natbib}
@@ -106,7 +107,7 @@ As a further test of the relative roles of inertial reactions versus aerodynamic
 
 \begin{figure}
 \begin{center}
-\includegraphics{../figures/asb-poster-figure2/Cmvsaoa-annotated.pdf}
+%\includegraphics{figures/asb-poster-figure2/Cmvsaoa-annotated.pdf}
 \end{center}
 \caption{Nondimensional pitch coefficient ($C_M$) \cite{McCay:2001, McCormick:1976} as a function of angle of attack for typical skydiving body postures shows clear differences in static stability ($\partial C_m/\partial\alpha$); spider posture is unstable and track posture is stable at a lower angle of attack.}
 \label{fig:2}
@@ -114,7 +115,7 @@ As a further test of the relative roles of inertial reactions versus aerodynamic
 
 \begin{figure}
 \begin{center}
-\includegraphics{../figures/asb-poster-figure3/pitch-control-authority-annotated.pdf}
+%\includegraphics{figures/asb-poster-figure3/pitch-control-authority-annotated.pdf}
 \end{center}
 \caption{$C_M$ as a function of angle of attack for track posture as arm angle is varied \ang{20} up and down, illustrating control effectiveness ($\partial C_m/\partial\delta$) of symmetric arm movements in pitch.}
 \label{fig:3}
@@ -140,7 +141,7 @@ We compared stability and control effectiveness observed in model tests to state
 
 \begin{figure}
 \begin{center}
-\includegraphics{../figures/asb-poster-figure1/skydiver-model.pdf}
+%\includegraphics{figures/asb-poster-figure1/skydiver-model.pdf}
 \end{center}
 \caption{Yaw model of skydiver, constructed using artists' manikin placed in typical human skydiving posture \cite{Poynter:2007}. Aerodynamic forces (lift, drag, and side force) and moments (pitch, roll, and yaw) \cite{McCay:2001, McCormick:1976} were measured using a six degree of freedom force/torque sensor (ATI; Apex, NC). Asymmetric body twist creates a left yaw moment. Similar models created for pitch and roll. }
 \label{fig:models}
@@ -154,7 +155,7 @@ Subtle movements effective for changing yaw (marginally stable); larger movement
 
 \begin{figure}
 \begin{center}
-\includegraphics{../figures/asb-poster-figure4/figure4.pdf}
+%\includegraphics{figures/asb-poster-figure4/figure4.pdf}
 \end{center}
 \caption{A-C. Volunteer test subject instrumented with wearable accelerometer (SparkFun; Boulder, CO; mass \SI{30}{\gram}) performing yaw maneuver using slight body twist and hand movements.  D. Roll, pitch, and yaw data during the maneuver from Kalman-filtered \SI{50}{\hertz} accelerometer data.  Subject performs \ang{360} left yaw turn, \ang{360} barrel roll, and \ang{360} right yaw turn in within \SI{8}{\second}.}
 \label{fig:4}
@@ -167,7 +168,7 @@ Sensor suite includes \SI{50}{\hertz} accelerometer, \SI{10}{\hertz} magnetomete
 
 \begin{figure}
 \begin{center}
-\includegraphics{../figures/asb-poster-figure5/figure5taller.pdf}
+%\includegraphics{figures/asb-poster-figure5/figure5taller.pdf}
 \end{center}
 \caption{A.\ Volunteer test subjects prior to jump, inset shows GPS/IMU device (DIYDrones; San Diego, CA; mass \SI{228}{\gram}).  B.\ During tandem skydive from 13,000 feet (\SI{3962}{\meter}), opening at 4,500 feet (\SI{1372}{\meter}).  C.\ GPS track during tandem skydive, view looking NE towards San Francisco Bay.}
 \label{fig:5}
@@ -180,5 +181,5 @@ Sensor suite includes \SI{50}{\hertz} accelerometer, \SI{10}{\hertz} magnetomete
 We thank E.\ Buchanan and T.\ Costanza of iFly SF, M.\ Cooper and G.\ Peek for technical advice, and the Berkeley Biomechanics group; R.\ Dudley, E.\ Chang-Siu and Y.\ Munk. We thank the Berkeley Center for Integrative Biomechanics Education and Research for a force sensor.  We dedicate our work to Alex Lowenstein, who inspired this research and whose loss helped us decide that today is a good day to skydive.
 
 
-\bibliography{../common/parachute}
+\bibliography{references/parachute}
 \end{document}
