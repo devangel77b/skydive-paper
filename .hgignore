@@ -7,6 +7,7 @@ syntax: glob
 *.log
 *.synctex.gz
 *~
-
+*.pdf
+templates/*
 
 syntax: regexp
